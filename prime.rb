@@ -1,7 +1,7 @@
-def prime?(nums)
-    nums.each do |num|
-    i => 2
-      while i < num
+def prime?(n)
+    n do |num|
+    i = 2
+      while i < n
         if num % i == 0
           puts "false"
         else
