@@ -1,13 +1,17 @@
-def prime?(n)
-    n do |num|
-    i = 2
-      while i < n
-        if num % i == 0
-          puts "false"
-        else
-          puts "true"
-        end
-        i += 1
-      end
-   end
+def prime?(num)
+  bool = true;
+  if num > 2 
+    arr = (2...num).to_a
+    arr.each do |x|
+      if num % x == 0 
+        bool = false 
+        break
+      end 
+    end
+    bool
+  elsif num == 2 
+    true
+  else
+    false
+  end
 end
