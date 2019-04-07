@@ -8,3 +8,4 @@ def prime?(n)
         break
       end 
     end
+  end
