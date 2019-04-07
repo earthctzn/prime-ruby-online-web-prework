@@ -1,6 +1,6 @@
 def prime?(nums)
     nums.each do |num|
-    i = 2
+    i => 2
       while i < num
         if num % i == 0
           puts "false"
