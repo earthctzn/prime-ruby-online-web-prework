@@ -1,15 +1,15 @@
-def prime?(num)
+def prime?(n)
   bool = true;
-  if num > 2 
-    arr = (2...num).to_a
+  if n > 2 
+    arr = (2...n).to_a
     arr.each do |x|
-      if num % x == 0 
+      if n % x == 0 
         bool = false 
         break
       end 
     end
     bool
-  elsif num == 2 
+  elsif n == 2 
     true
   else
     false
